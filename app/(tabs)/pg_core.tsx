@@ -49,7 +49,7 @@ export default function App() {
 
       formData.append("roi", JSON.stringify(roi));
       const response = await fetch(
-        "https://6652-38-250-155-2.ngrok-free.app/upload/",
+        "https://5c46-181-67-181-177.ngrok-free.app/upload/",
         {
           method: "POST",
           body: formData,
@@ -63,6 +63,7 @@ export default function App() {
       setFotoUri(null);
     } catch (error) {
       console.error("Error", error);
+      setFotoUri(null);
     } finally {
       SetLoading(false);
     }
