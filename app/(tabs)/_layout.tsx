@@ -26,7 +26,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="pg_core"
+        name="scanner"
         options={{
           title: "Acciones",
           tabBarIcon: ({ color }) => (
